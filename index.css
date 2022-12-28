@@ -6,6 +6,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #images_group{
@@ -21,16 +22,16 @@ body{
 
 
 #images_group:hover > :first-child {
-    transform: translateX(-250px) translateY(300px) rotate(-19deg);
+    transform: translateX(-250px) translateY(300px) rotate(-26deg);
 }
 #images_group:hover > :nth-child(2) {
-    transform: translateX(-120px) translateY(-300px) rotate(-7deg);
+    transform: translateX(-260px) translateY(-300px) rotate(16deg);
 }
 #images_group:hover > :nth-child(3){
-    transform: translateX(250px) translateY(300px) rotate(11deg);
+    transform: translateX(250px) translateY(300px) rotate(31deg);
 }
 #images_group:hover > :nth-child(4){
-    transform: translateX(80px) translateY(-300px) rotate(8deg);
+    transform: translateX(180px) translateY(-300px) rotate(-20deg);
 }
 
 
@@ -51,11 +52,52 @@ body{
 
 
 
+  
 
 
 .main_images, .secondary_images{
     position: absolute;
 }
+#button_group{
+
+    position: absolute;
+    top: 700px;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+#button_group > *{
+    background-color: transparent;
+    border-radius: 100%;
+    padding: 10px;    
+}
+#button_group > :first-child{
+    border: 1px solid red;
+    color: red;
+}
+#button_group > :nth-child(2){
+    border: 1px solid blue;
+    color: blue;
+}
+
+
+#button_group > :first-child:hover{
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px red,0px 0px 0.5em 0px red;
+    -moz-box-shadow: inset 0px 0px 0.5em 0px red,0px 0px 0.5em 0px red;
+    box-shadow: inset 0px 0px 0.5em 0px red,0px 0px 0.5em 0px red;
+    cursor: pointer;
+}
+
+#button_group > :nth-child(2):hover{
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px blue,0px 0px 0.5em 0px blue;
+    -moz-box-shadow: inset 0px 0px 0.5em 0px blue,0px 0px 0.5em 0px blue;
+    box-shadow: inset 0px 0px 0.5em 0px blue,0px 0px 0.5em 0px blue;
+    cursor: pointer;
+}
+
+
+
+
 
 #images_group > :first-child{
     width: 100px;
