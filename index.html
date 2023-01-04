@@ -112,12 +112,12 @@
     </div>
 
     <script>
-        var before = none
-        var current = document.getElementsByClassName('active')[0]
-        var after = document.getElementsByClassName('active')[1]
+        var before = "none"
+        var current = document.getElementsByClassName('images_group')[0]
+        var after = document.getElementsByClassName('images_group')[1]
         const like = () => {
-            current
             current.style.scale = 0; current.style.translate = '-200px'
+            after.style.scale = 1
         }
         const dislike = () => {
             current.style.scale = 0; current.style.translate = '200px'
